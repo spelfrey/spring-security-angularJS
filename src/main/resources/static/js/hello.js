@@ -2,8 +2,7 @@
  * Created by stephen.pelfrey on 2/20/16.
  */
 
-angular.module('hello', ['ngRoute'])
-    .config(function($routeProvider, $httpProvider) {
+angular.module('hello', ['ngRoute']).config(function($routeProvider, $httpProvider) {
 
         $routeProvider.when('/', {
             templateUrl : 'home.html',
@@ -15,7 +14,7 @@ angular.module('hello', ['ngRoute'])
             controllerAs: 'controller'
         }).otherwise('/');
 
-        #$httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+        $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
 
     })
     .controller('home', function ($http) {
