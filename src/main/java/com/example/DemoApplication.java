@@ -27,15 +27,15 @@ public class DemoApplication {
 		return user;
 	}
 
-	@RequestMapping("/resource")
-	public Map<String,Object> home() {
-
-		Map<String,Object> model = new HashMap<>();
-		model.put("id", UUID.randomUUID().toString());
-		model.put("content", "Hello World");
-		return model;
-
-	}
+//	@RequestMapping("/resource")
+//	public Map<String,Object> home() {
+//
+//		Map<String,Object> model = new HashMap<>();
+//		model.put("id", UUID.randomUUID().toString());
+//		model.put("content", "Hello World");
+//		return model;
+//
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
